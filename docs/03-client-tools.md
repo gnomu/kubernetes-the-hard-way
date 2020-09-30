@@ -62,3 +62,19 @@ Client Version: version.Info{Major:"1", Minor:"13", GitVersion:"v1.13.0", GitCom
 ```
 
 Next: [Certificate Authority](04-certificate-authority.md)
+
+### Completion
+
+configure bash [completion](https://kubernetes.io/docs/tasks/tools/install-kubectl/#enabling-shell-autocompletion)
+
+```
+{
+  echo 'source <(kubectl completion bash)' >>~/.bashrc
+  sudo -i
+  kubectl completion bash >/etc/bash_completion.d/kubectl
+  exit
+  echo 'alias k=kubectl' >>~/.bashrc
+  echo 'complete -F __start_kubectl k' >>~/.bashrc
+}
+```
+
