@@ -58,6 +58,8 @@ NAME                      READY   STATUS    RESTARTS   AGE
 busybox-bd8fb7cbd-vflm9   1/1     Running   0          10s
 ```
 
+IN case failed to start pods due to coredns property, please see the [coredns plugin doc](https://github.com/coredns/coredns/tree/master/plugin)
+
 Execute a DNS lookup for the `kubernetes` service inside the `busybox` pod:
 
 ```
