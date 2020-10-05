@@ -45,6 +45,8 @@ Create a `busybox` deployment:
 kubectl run --generator=run-pod/v1  busybox --image=busybox:1.28 --command -- sleep 3600
 ```
 
+:caution: busybox version is less than 1.28. [details](https://github.com/kubernetes/dns/issues/253#issuecomment-412287127)
+
 List the pod created by the `busybox` deployment:
 
 ```
